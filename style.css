@@ -5,5 +5,48 @@
 }
 
 body {
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,
+.cart,
+.nav-links {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  margin: 5px;
+  font-weight: 300;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.cart {
+  flex: 1;
+  justify-content: end;
 }
