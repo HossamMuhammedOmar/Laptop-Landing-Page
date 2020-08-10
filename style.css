@@ -88,7 +88,7 @@ nav {
 
 .cta-select {
   font-size: 16px;
-  border: solid 1px #2980b9;
+  border: solid 1px #34495e;
   width: 200px;
   height: 50px;
   background: transparent;
@@ -96,14 +96,14 @@ nav {
 }
 
 .cta-add {
-  background-color: #2980b9;
+  background-color: #34495e;
   width: 200px;
   height: 50px;
   cursor: pointer;
   font-size: 16px;
   color: white;
   border: none;
-  margin: 30px 0 0 0;
+  margin: 30px 0 0 10px;
 }
 
 .cover {
@@ -112,4 +112,49 @@ nav {
 
 .cover img {
   height: 30vh;
+  animation: drop 1.1s ease;
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.mid-circle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.small-circle {
+  width: 550px;
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0.08;
+}
+
+.laptop-select {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
