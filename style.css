@@ -61,7 +61,7 @@ nav {
 .cart {
   flex: 1;
   cursor: pointer;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .presentation {
